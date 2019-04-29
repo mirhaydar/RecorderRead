@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2017, 12:20:07 PM
+    Author     : nliesmanto
+*/
+
+body {
+    background-color: tan;
+}
+
+.wrap {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	border: 5px solid black;
+	margin-top: 25px;
+}
+
+.header {
+	text-align: left;
+	padding: 25px;
+}
+
+.logo {
+	float: left;
+	width: 200px;
+}
+
+.title {
+	float: left;
+	height: 105px;
+	padding-top:50px;
+	padding-left: 25px;
+}
+
+.main {
+	text-align: left;
+	padding: 25px;
+}
+
+.footer {
+	text-align: left;
+	padding: 25px;
+}
+
+input[readonly] {
+    background-color: gray;
+}
+
+/* table css */
+table {
+     border-collapse: collapse;
+     padding: 15px;
+     border: 10px solid white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid white;
+    border-bottom:2px solid #ccc;
+}
+
+th {
+    color: silver;
+    height: 50%;
+    text-align: left;
+    vertical-align: bottom;
+    background-color: #ffff99;
+}
+
+tr:nth-child(even) {
+    color: white;
+    background-color: coral;
+}
+
+tr:nth-child(odd) {
+    color: white;
+    background-color: coral;
+}
+
+#read tr:hover {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+/*------*/
+
+a {
+    color: maroon;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    cursor: help;
+}
+
+a:hover {
+    color: gold;
+}
+
+.right {
+    text-align: right;
+}
+
+.add td {
+    border: none;
+    height:25px;
+    padding:10px;
+    font-weight: bold;
+}
+
+.update td {
+    border: none;
+    height:25px;
+    padding:10px;
+    font-weight: bold;
+}
+
+/* nav */
+
+.nav { margin-left: 30px; text-align: left;}
+
+/*Fat Erik's Pipelist*/
+.navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.navlist li:before { content: "| "; }
+.navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html .navlist li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html .navlist { height: 1%; }
+
+* html .navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html .navlist li:first-child { border-left: 0; }
